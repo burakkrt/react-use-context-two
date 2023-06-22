@@ -4,7 +4,7 @@ import InfoTime from "./InfoTime.jsx";
 
 export default function PersonelInfo() {
 
-  const {currentInfo, setCurrentInfo, infoTime} = useContext(Context);
+  const {currentInfo, infoTime} = useContext(Context);
 
   console.log(currentInfo);
 
