@@ -6,8 +6,6 @@ export default function PersonelInfo() {
 
   const {currentInfo, infoTime} = useContext(Context);
 
-  console.log(currentInfo);
-
   const dotHandler = () => {
     alert("Button Passive")
   }

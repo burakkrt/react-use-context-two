@@ -1,5 +1,6 @@
 import {useContext} from "react"
 import {Context} from '../context/ContextProvider.jsx'
+import {setLocalStorageInfoTime} from "../localStorage.js";
 
 export default function InfoTime() {
   const {infoTime, setInfoTime} = useContext(Context);
@@ -9,6 +10,7 @@ export default function InfoTime() {
   const timeHandler = (e) => {
     if ((e.currentTarget.textContent).toLocaleLowerCase("EN") !== infoTime) {
       setInfoTime((e.currentTarget.textContent).toLocaleLowerCase("EN"))
+      setLocalStorageInfoTime(e.currentTarget.textContent.toLocaleLowerCase("EN"));
     }
   }
 
