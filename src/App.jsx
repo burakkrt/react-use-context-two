@@ -10,7 +10,7 @@ export default function App() {
       <ContextProvider>
         <div
           className="container d-flex flex-column justify-content-center min-vh-100 py-5 py-lg-0">
-          <div className="mb-4">
+          <div className="mb-5">
             <PersonelFilter/>
           </div>
           <div className="d-grid row-gap-4">
